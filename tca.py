@@ -30,7 +30,7 @@ def tca(groq_api_key):
     # Sidebar customization
     st.sidebar.title("Customization")
     model = st.sidebar.selectbox(
-        "Choose a model", ["llama-3.3-70b-versatile, llama3-70b-8192, llama3-8b-8192"]
+        "Choose a model", ["llama-3.3-70b-versatile, llama-3.1-70b-versatile, llama3-8b-8192"]
     )
     conversational_memory_length = st.sidebar.slider(
         "Conversational memory length:", 1, 10, value=5
